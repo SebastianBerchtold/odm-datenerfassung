@@ -165,7 +165,7 @@ def licenseToODM(licenseList):
     if 'Datenlizenz Deutschland - Namensnennung - Version 1.0' in licenseList:
         odmLicense = 'dl-de-by-1.0'
     elif (u'keine' in licenseList) or (u'unbeschränkt' in licenseList):
-        odmLicense = 'other-open'
+        odmLicense = 'other-closed'
     elif licenseList == []:
         odmLicense = 'nicht bekannt'
     else:
